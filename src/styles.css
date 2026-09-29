@@ -1,0 +1,107 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Engineering Incident Memory Agent — "operations console" design system.
+ * Dark slate surfaces, amber incident accent, teal memory accent.
+ * All colors are oklch tokens; never hardcode colors in components.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-memory: var(--memory);
+  --color-memory-foreground: var(--memory-foreground);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+:root {
+  --radius: 0.5rem;
+  --background: oklch(0.19 0.023 258);
+  --foreground: oklch(0.94 0.008 250);
+  --surface: oklch(0.235 0.024 258);
+  --card: oklch(0.235 0.024 258);
+  --card-foreground: oklch(0.94 0.008 250);
+  --popover: oklch(0.235 0.024 258);
+  --popover-foreground: oklch(0.94 0.008 250);
+  --primary: oklch(0.79 0.155 78);
+  --primary-foreground: oklch(0.2 0.03 70);
+  --secondary: oklch(0.29 0.026 258);
+  --secondary-foreground: oklch(0.94 0.008 250);
+  --muted: oklch(0.28 0.022 258);
+  --muted-foreground: oklch(0.69 0.019 256);
+  --accent: oklch(0.31 0.03 250);
+  --accent-foreground: oklch(0.95 0.008 250);
+  --destructive: oklch(0.62 0.2 25);
+  --destructive-foreground: oklch(0.97 0.01 25);
+  --warning: oklch(0.8 0.15 72);
+  --warning-foreground: oklch(0.2 0.03 70);
+  --success: oklch(0.72 0.14 155);
+  --success-foreground: oklch(0.18 0.03 155);
+  --memory: oklch(0.78 0.11 195);
+  --memory-foreground: oklch(0.19 0.03 195);
+  --border: oklch(0.33 0.024 256);
+  --input: oklch(0.33 0.024 256);
+  --ring: oklch(0.79 0.155 78);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    background-image:
+      radial-gradient(60rem 30rem at 15% -10%, oklch(0.79 0.155 78 / 0.07), transparent 70%),
+      radial-gradient(50rem 26rem at 95% 0%, oklch(0.78 0.11 195 / 0.07), transparent 70%);
+    background-attachment: fixed;
+  }
+}
+
+@utility panel {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+@utility label-caps {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-muted-foreground);
+}
