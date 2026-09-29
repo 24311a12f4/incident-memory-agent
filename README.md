@@ -1,29 +1,186 @@
-# Welcome to your Lovable project
+# 🚀 Engineering Incident Memory Agent
 
-This project was built with [Lovable](https://lovable.dev).
+> AI-powered incident investigation assistant with long-term memory for software engineering teams.
 
-## Build with Lovable
+![Status](https://img.shields.io/badge/Status-Prototype-success)
+![Hackathon](https://img.shields.io/badge/Hackathon-HackwithHyderabad%203.0-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+---
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+## 📌 Problem Statement
 
-## Development
+Software engineers spend valuable time investigating production incidents. Existing tools often provide logs and monitoring but do not effectively reuse knowledge from previous incidents.
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+Engineering Incident Memory Agent solves this problem by remembering previous incidents, retrieving similar cases, and providing AI-powered investigation suggestions.
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+---
+
+## 💡 Solution
+
+Engineering Incident Memory Agent combines AI reasoning with long-term memory to assist software engineers during incident investigation.
+
+The system can:
+
+- Investigate production incidents
+- Retrieve similar historical incidents
+- Suggest likely root causes
+- Recommend next troubleshooting steps
+- Learn from resolved incidents for future investigations
+
+---
+
+## ✨ Features
+
+- 🤖 AI Incident Investigation
+- 🧠 Long-Term Memory
+- 🔍 Similar Incident Retrieval
+- 📊 Severity Classification
+- 📋 Recommended Next Steps
+- 💾 Memory Learning
+- ⚡ Fast Search
+- 🎯 Beginner-friendly Interface
+
+---
+
+## 🏗 System Workflow
+
+```text
+Engineer
+     │
+     ▼
+Enter Incident Details
+     │
+     ▼
+AI Investigation
+     │
+     ▼
+Retrieve Similar Past Incidents
+     │
+     ▼
+Root Cause Analysis
+     │
+     ▼
+Recommended Resolution
+     │
+     ▼
+Store Resolution into Memory
+```
+
+---
+
+## 🖥 Screenshots
+
+### Home Page
+
+> Add screenshot here
+
+### Investigation Result
+
+> Add screenshot here
+
+### Memory Panel
+
+> Add screenshot here
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+
+### Backend
+
+- Supabase
+
+### AI
+
+- LLM
+- Long-Term Memory
+- JSON Memory Store
+
+---
+
+## 📂 Project Structure
+
+```
+incident-memory-agent
+│
+├── src/
+├── public/
+├── supabase/
+├── package.json
+├── vite.config.ts
+└── README.md
+```
+
+---
+
+## 🚀 Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/24311a12f4/incident-memory-agent.git
+```
+
+Move into the project
+
+```bash
+cd incident-memory-agent
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Start the development server
+
+```bash
 npm run dev
 ```
 
-## Built with
+Open
 
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
+```
+http://localhost:5173
+```
+
+---
+
+## 🎯 Future Enhancements
+
+- Vector Database Memory
+- Real-Time Log Analysis
+- Slack Integration
+- Jira Integration
+- Kubernetes Monitoring
+- Cloud Deployment
+- AI Chat Assistant
+
+---
+
+## 👥 Team
+
+**Team Astron**
+
+HackwithHyderabad 3.0
+
+---
+
+## 📜 License
+
+MIT License
+
+---
+
+## ⭐ Support
+
+If you like this project, please give it a ⭐ on GitHub.
